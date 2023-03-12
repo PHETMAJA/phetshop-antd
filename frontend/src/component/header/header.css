@@ -37,7 +37,9 @@
 .nav__icon {
   display: none;
 }
-
+.nav__cart {
+  background-color: white;
+}
 .nav__cart-icon {
   color: var(--theme-color);
   font-size: 2rem;

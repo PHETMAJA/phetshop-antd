@@ -1,6 +1,5 @@
 import React from 'react';
 import './searchbox.css';
-// import { Input } from 'antd';
 
 const SearchBox = () => {
   return (

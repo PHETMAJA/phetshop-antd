@@ -1,5 +1,6 @@
 .searchbox {
   position: relative;
+  z-index: 1;
 }
 .searchInput {
   width: 100%;
@@ -7,6 +8,7 @@
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
   border-radius: 2rem;
   color: var(--title-color);
+  background-color: white;
 }
 
 .search__input {
@@ -22,7 +24,7 @@
   padding: 0.2rem 1rem 0.2rem 1rem;
   border: none;
   cursor: pointer;
-  background-color: var(--container-backgrond);
+  background-color: white;
 }
 
 .search__button-icon {

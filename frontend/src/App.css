@@ -78,7 +78,9 @@ a {
   display: grid;
   gap: 1.5rem;
 }
-
+main {
+  padding-top: 4.5rem;
+}
 /*=============== BREAKPOINTS ===============*/
 
 /* For large divices */

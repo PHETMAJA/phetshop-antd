@@ -12,3 +12,9 @@
 4. Create Search Box
    4.1 npm install --save @ant-design/icons
    4.3 add cart icon
+5. Create Carosel and List Product
+   5.1 create carosel
+   5.2 create products array
+   5.3 add product images
+   5.4 render products
+   5.5 style products
