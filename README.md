@@ -18,3 +18,8 @@
    5.3 add product images
    5.4 render products
    5.5 style products
+6. Add routing
+   6.1 create ProductScreen
+   6.2 edit carousel
+   6.3 npm i react-responsive
+   6.4 product and carousel responsive

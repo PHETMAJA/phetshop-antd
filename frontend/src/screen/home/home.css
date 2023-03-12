@@ -19,7 +19,7 @@
 
 .product {
   border: 1px #404040 solid;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .product img {
@@ -29,4 +29,28 @@
 
 .product__info {
   padding: 1rem;
+}
+
+/*=============== BREAKPOINTS ===============*/
+
+/* For large divices */
+@media screen and (max-width: 992px) {
+  .products {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: unset;
+    justify-content: flex-start;
+    overflow: auto;
+  }
+  .product img {
+    min-width: 150px;
+  }
+}
+/* For medium divices */
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 576px) {
+}
+/* For small divices */
+@media screen and (max-width: 350px) {
 }
