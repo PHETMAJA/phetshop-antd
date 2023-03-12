@@ -9,3 +9,6 @@
    3.4 set App.css
    3.5 create header
    3.6 make responsive for nav-menu
+4. Create Search Box
+   4.1 npm install --save @ant-design/icons
+   4.3 add cart icon

@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SearchBox from '../searchbox/SearchBox';
 import './header.css';
+import { ShoppingCartOutlined } from '@ant-design/icons';
+import { Badge } from 'antd';
 
 const Header = () => {
   return (
@@ -8,8 +11,13 @@ const Header = () => {
       <header className="header">
         <nav className="nav container">
           <h3 className="nav__logo">
-            <Link to="/"> PHETMAJA</Link>
+            <Link to="/" className="nav__logo">
+              {' '}
+              PHETMAJA
+            </Link>
           </h3>
+
+          <SearchBox />
 
           <div className="nav__menu">
             <ul className="nav__list">
@@ -38,6 +46,11 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
+          </div>
+          <div className="nav__cart">
+            <Badge count={0}>
+              <ShoppingCartOutlined className="nav__cart-icon" />
+            </Badge>
           </div>
         </nav>
       </header>

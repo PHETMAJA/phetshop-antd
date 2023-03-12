@@ -38,6 +38,15 @@
   display: none;
 }
 
+.nav__cart-icon {
+  color: var(--theme-color);
+  font-size: 2rem;
+}
+
+.nav__cart-badge {
+  background-color: var(--theme-color);
+}
+
 /*=============== BREAKPOINTS ===============*/
 
 /* For large divices */
@@ -61,7 +70,7 @@
     bottom: 0;
     width: 100%;
     background-color: var(--body-color);
-    padding: 2rem;
+    padding: 1rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     transition: 0.3s;
   }
@@ -80,6 +89,19 @@
     display: block;
     font-size: 1.5rem;
     padding: 1rem;
+  }
+  .nav__cart {
+    position: fixed;
+    right: 0;
+    bottom: 15%;
+    padding: 1rem;
+    margin-right: 1rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 1rem;
+  }
+
+  .nav__cart-icon {
+    font-size: 2rem;
   }
 }
 /* For medium divices */
