@@ -5,7 +5,7 @@ import './header.css';
 import { ShoppingCartOutlined } from '@ant-design/icons';
 import { Badge } from 'antd';
 
-const Header = () => {
+function Header() {
   return (
     <div>
       <header className="header">
@@ -56,6 +56,6 @@ const Header = () => {
       </header>
     </div>
   );
-};
+}
 
 export default Header;

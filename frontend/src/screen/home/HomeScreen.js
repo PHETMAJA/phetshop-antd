@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Carouselitem from '../../component/carousel/Carousel_item';
 import Header from '../../component/header/Header';
-import '../../data';
-import data from '../../data';
+// import data from '../../data';
 import './home.css';
+import axios from 'axios';
 
-const Home = () => {
+function Home() {
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios.get('/api/products');
+      setProducts(result.data);
+    };
+    fetchData();
+  }, []);
+
   return (
     <div>
       <header>
@@ -17,7 +26,7 @@ const Home = () => {
         <div className="container">
           <h1>ผลไม้สด</h1>
           <div className="products">
-            {data.products.map((product) => (
+            {products.map((product) => (
               <div className="product" key={product.slug}>
                 <Link to={`/product/${product.slug}`}>
                   <img src={product.image} alt={product.name} />
@@ -38,6 +47,6 @@ const Home = () => {
       </main>
     </div>
   );
-};
+}
 
 export default Home;

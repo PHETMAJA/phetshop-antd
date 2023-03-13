@@ -1,7 +1,7 @@
 import React from 'react';
 import './searchbox.css';
 
-const SearchBox = () => {
+function SearchBox() {
   return (
     <div className="searchbox">
       <div className="searchInput ">
@@ -16,6 +16,6 @@ const SearchBox = () => {
       </div>
     </div>
   );
-};
+}
 
 export default SearchBox;
