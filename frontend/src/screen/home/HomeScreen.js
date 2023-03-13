@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Carouselitem from '../../component/carousel/Carouselitem';
+import Carouselitem from '../../component/carousel/Carousel_item';
 import Header from '../../component/header/Header';
 import '../../data';
 import data from '../../data';

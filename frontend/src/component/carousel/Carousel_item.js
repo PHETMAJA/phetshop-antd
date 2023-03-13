@@ -1,6 +1,7 @@
 import React from 'react';
 import { Carousel } from 'antd';
 import { useMediaQuery } from 'react-responsive';
+import './carousel_item.css';
 
 const contentStyle_Mobile = {
   margin: 0,
@@ -31,37 +32,40 @@ const Carouselitem = () => {
   return (
     <div>
       {isTabletOrMobile && (
-        <Carousel afterChange={onChange}>
-          <div>
-            <img
-              src="/images/caro.jpg"
-              alt="carousel"
-              style={contentStyle_Mobile}
-            />
-          </div>
-          <div>
-            <img
-              src="/images/caro.jpg"
-              alt="carousel"
-              style={contentStyle_Mobile}
-            />
-          </div>
-          <div>
-            <img
-              src="/images/caro.jpg"
-              alt="carousel"
-              style={contentStyle_Mobile}
-            />
-          </div>
-          <div>
-            <img
-              src="/images/caro.jpg"
-              alt="carousel"
-              style={contentStyle_Mobile}
-            />
-          </div>
-        </Carousel>
+        <div>
+          <Carousel afterChange={onChange}>
+            <div>
+              <img
+                src="/images/caro.jpg"
+                alt="carousel"
+                style={contentStyle_Mobile}
+              />
+            </div>
+            <div>
+              <img
+                src="/images/caro.jpg"
+                alt="carousel"
+                style={contentStyle_Mobile}
+              />
+            </div>
+            <div>
+              <img
+                src="/images/caro.jpg"
+                alt="carousel"
+                style={contentStyle_Mobile}
+              />
+            </div>
+            <div>
+              <img
+                src="/images/caro.jpg"
+                alt="carousel"
+                style={contentStyle_Mobile}
+              />
+            </div>
+          </Carousel>
+        </div>
       )}
+
       {isDesktopOrLaptop && (
         <div className="container">
           <Carousel afterChange={onChange}>
